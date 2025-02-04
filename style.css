@@ -1,208 +1,206 @@
 /* Modern BMI Calculator Styles */
 :root {
-    --primary-color: #6A5ACD;       /* Soft indigo */
-    --secondary-color: #7B68EE;     /* Medium slate blue */
-    --background-color: #F4F6F9;    /* Soft light gray */
-    --text-color-dark: #2C3E50;     /* Deep navy blue */
-    --text-color-light: #4A5568;    /* Muted gray-blue */
-    --accent-color: #5E81AC;        /* Soft blue */
+  --primary-color: #6a5acd; /* Soft indigo */
+  --secondary-color: #7b68ee; /* Medium slate blue */
+  --background-color: #f4f6f9; /* Soft light gray */
+  --text-color-dark: #2c3e50; /* Deep navy blue */
+  --text-color-light: #4a5568; /* Muted gray-blue */
+  --accent-color: #5e81ac; /* Soft blue */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg,
+  font-family: "Inter", "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+  background: linear-gradient(
+    135deg,
     var(--primary-color),
     var(--secondary-color),
     var(--accent-color)
-    );
-    background-size: 400% 400%;
-    animation: gradientFlow 12s ease infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    color: var(--text-color-dark);
-    line-height: 1.6;
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  color: var(--text-color-dark);
+  line-height: 1.6;
 }
 
 @keyframes gradientFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(15px) saturate(180%);
-    border-radius: 24px;
-    box-shadow:
-            0 20px 40px rgba(0, 0, 0, 0.1),
-            0 10px 20px rgba(0, 0, 0, 0.05);
-    padding: 3rem;
-    max-width: 500px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: all 0.3s ease;
-    margin: auto;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px) saturate(180%);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  margin: auto;
 }
 
 .container:hover {
-    box-shadow:
-            0 25px 50px rgba(0, 0, 0, 0.12),
-            0 15px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12), 0 15px 25px rgba(0, 0, 0, 0.08);
 }
 
-
 h1 {
-    font-size: 2.75rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-    letter-spacing: -1px;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -1px;
 }
 
 .input-group {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 label {
-    display: block;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-    color: var(--text-color-light);
-    font-size: 1rem;
-    transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .large-input {
-    width: 90%;
-    padding: 1rem 1.25rem;
-    border: 2px solid rgba(94, 129, 172, 0.3);
-    border-radius: 16px;
-    font-size: 1.1rem;
-    background: rgba(255, 255, 255, 0.7);
-    transition:
-            border-color 0.3s ease,
-            box-shadow 0.3s ease,
-            transform 0.2s ease;
+  width: 90%;
+  padding: 1rem 1.25rem;
+  border: 2px solid rgba(94, 129, 172, 0.3);
+  border-radius: 16px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .large-input:focus {
-    border-color: var(--accent-color);
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(94, 129, 172, 0.2);
-    transform: scale(1.01);
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(94, 129, 172, 0.2);
+  transform: scale(1.01);
 }
 
 button {
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1.1rem 2.2rem;
-    border-radius: 16px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition:
-            background 0.3s ease,
-            transform 0.2s ease,
-            box-shadow 0.3s ease;
-    width: 100%;
-    letter-spacing: 0.5px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1.1rem 2.2rem;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%;
+  letter-spacing: 0.5px;
 }
 
 button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-1px);
-    box-shadow: 0 8px 20px rgba(106, 90, 205, 0.3);
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(106, 90, 205, 0.3);
 }
 
 button:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(106, 90, 205, 0.2);
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(106, 90, 205, 0.2);
 }
 
 #bmiResults {
-    background: rgba(236, 240, 241, 0.7);
-    border-radius: 16px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    font-size: 1.3rem;
-    color: var(--text-color-dark);
-    text-align: center;
-    font-weight: 500;
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  background: rgba(236, 240, 241, 0.7);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: var(--text-color-dark);
+  text-align: center;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-in {
-    opacity: 1;
-    transform: translateY(0);
-    animation: softFadeIn 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 1;
+  transform: translateY(0);
+  animation: softFadeIn 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes softFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Enhanced Responsive Design */
 @media (max-width: 768px) {
-    body {
-        padding: 1rem;
-        align-items: center;
-    }
+  body {
+    padding: 1rem;
+    align-items: center;
+  }
 
-    .container {
-        width: calc(100% - 2rem);
-        max-width: 100%;
-        padding: 2rem;
-        margin: auto;
-    }
+  .container {
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    padding: 2rem;
+    margin: auto;
+  }
 }
 
 @media (max-height: 600px) {
-    .container {
-        max-height: 95vh;
-        padding: 2rem;
-    }
+  .container {
+    max-height: 95vh;
+    padding: 2rem;
+  }
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 1.5rem;
-        border-radius: 20px;
-        margin: auto;
-    }
+  .container {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: auto;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    .large-input, button {
-        font-size: 1rem;
-        padding: 0.9rem 1.2rem;
-    }
+  .large-input,
+  button {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+  }
 }
